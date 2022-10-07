@@ -127,7 +127,11 @@ label div {
   padding: 5px;
 }
 
-input:focus ~ label div:first-child {
+.for-focus:focus ~ label div {
+  box-shadow: 0 0 0 2px rgb(117, 166, 183);
+}
+
+.for-focus-popup:focus ~ label {
   box-shadow: 0 0 0 2px rgb(117, 166, 183);
 }
 
@@ -213,5 +217,6 @@ input:focus ~ label div:first-child {
 }
 
 li input {
-  display: none;
+  opacity: 0;
+  position: absolute;
 }
