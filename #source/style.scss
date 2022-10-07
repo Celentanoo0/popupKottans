@@ -1,1 +1,55 @@
 @import 'nullstyle.scss';
+
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    border: 1px solid red;
+    flex: 0 1 20%;
+}
+
+.buttons ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons{
+    border: 1px solid blue;
+    flex: 0 1 30%;
+    padding: 20px;
+    color: gray;
+    font-size: 16px;
+    &__profile-photo{
+        max-width: 100%;
+        img{
+            border-radius: 50%;
+            width: 50px;
+            border: 1px solid black;
+        }
+    }
+    &__popup{
+        max-width: 100%;
+        img{
+            width: 30px;
+        }
+    }
+    &__notifications{
+        max-width: 100%;
+        img{
+            width: 25px;
+        }
+    }
+}
+
+li input{
+    display: none;
+}
