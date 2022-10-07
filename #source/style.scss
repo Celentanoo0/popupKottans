@@ -50,7 +50,13 @@
     }
 }
 
-//#images:checked
+label div{
+    padding: 5px;
+}
+
+input:focus ~ label div:first-child{
+    box-shadow: 0 0 0 2px rgb(117, 166, 183);
+}
 
 // li input{
 //     display: none;
