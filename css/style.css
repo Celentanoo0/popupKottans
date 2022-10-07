@@ -81,8 +81,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-  border: 1px solid red;
   flex: 0 1 20%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: white;
 }
 
 .buttons ul {
@@ -135,7 +139,7 @@ input:focus ~ label div:first-child {
   left: -80px;
   width: 380px;
   overflow: scroll;
-  height: 510px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   background: white;
@@ -147,12 +151,36 @@ input:focus ~ label div:first-child {
   background: rgb(236, 236, 236);
   color: gray;
   text-align: center;
-  padding: 5px 0;
   margin: 10px 0 0 0;
 }
 
 #popup:checked ~ .popup-menu {
   top: 85px;
+}
+
+.popup-sub {
+  padding: 30px 20px 8px;
+  display: none;
+}
+
+#more-button:checked ~ .popup-sub {
+  display: block;
+  background: white;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: lightgray;
+  display: none;
+}
+
+#more-button:checked ~ .line {
+  display: block;
+}
+
+#more-button:checked ~ label div {
+  display: none;
 }
 
 .popup-container {
@@ -178,6 +206,10 @@ input:focus ~ label div:first-child {
 }
 .item__img img {
   height: 40px;
+}
+
+.item:hover {
+  box-shadow: 0 0 0 1px lightgray;
 }
 
 li input {
