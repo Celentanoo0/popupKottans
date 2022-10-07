@@ -68,15 +68,17 @@ label div{
     position: absolute;
     border: 1px solid lightgray;
     box-shadow: 0 0 20px lightgray;
-    top: -999px;
+    //top: -999px;
+    top: 85px;
     left: -80px;
     width: 380px;
+    opacity: 0;
     overflow: scroll;
     height: 500px;
     display: flex;
     flex-direction: column;
     background: white;
-    transition: 0.5s;
+    transition: 0.15s;
     &__more-button{
         align-self: center;
         width: 100%;
@@ -88,7 +90,8 @@ label div{
     }
 }
 #popup:checked ~ .popup-menu{
-    top: 85px;
+    //top: 85px;
+    opacity: 1;
 }
 
 .popup-sub{
