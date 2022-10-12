@@ -57,10 +57,10 @@ label div{
     padding: 5px;
 }
 
-.for-focus:focus ~ label div{
+.for-focus:focus ~ .buttons_focus{
     box-shadow: 0 0 0 2px rgb(117, 166, 183);
 }
-.for-focus-popup:focus ~ label {
+.for-focus-popup:focus ~ .item__container{
     box-shadow: 0 0 0 2px rgb(117, 166, 183);
 }
 
@@ -89,6 +89,9 @@ label div{
         margin: 10px 0 0 0;
     }
 }
+.more-button__button{
+    padding: 5px 0;
+}
 #popup:checked ~ .popup-menu{
     //top: 85px;
     opacity: 1;
@@ -111,7 +114,7 @@ label div{
 #more-button:checked ~ .line{
     display: block;
 }
-#more-button:checked ~ label div{
+#more-button:checked ~ .more-button__button{
     display: none;
 }
 
@@ -130,9 +133,13 @@ label div{
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 15px 10px;
-    // border: 1px solid red;
+    &__container{
+        height: 100%;
+        width: 100%;
+        padding: 17px 0;
+    }
     &__img{
+        padding: 0 0 16px 0;
         max-height: 100%;
         img{
             height: 40px;

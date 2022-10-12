@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Popup</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
                 <ul>
                     <li>
                         <input type="checkbox" name="main-buttons" id="mail" class="for-focus">
-                        <div class="buttons__mail">
+                        <div class="buttons__mail buttons_focus">
                             <label for="mail">
                                 <span>Mail</span>
                             </label>
@@ -23,7 +23,7 @@
                     </li>
                     <li>
                         <input type="checkbox" name="main-buttons" id="images" class="for-focus">
-                        <div class="buttons__images">
+                        <div class="buttons__images buttons_focus">
                             <label for="images">
                                 <span>Images</span>
                             </label>
@@ -31,196 +31,313 @@
                     </li>
                     <li>
                         <input type="checkbox" name="main-buttons" id="popup" class="for-focus">
-                        <div class="buttons__popup">
+                        <div class="buttons__popup buttons_focus">
                             <label for="popup">
                                 <span>
                                     <img src="/popup-icons/popup-button.png" alt="popup-btn">
                                 </span>
                             </label>
                         </div>
-                        <!-- from there! -->
                         <div class="buttons__popup-menu popup-menu">
                             <div class="buttons__popup-main popup-container">
                                 <div class="popup-container__group">
                                     <div class="popup-container__item item">
                                         <input class="for-focus-popup" type="checkbox" name="sub-buttons" id="first-item">
-                                        <label for="first-item">
+                                        
+                                        <div class="item__container">
                                             <div class="item__img">
-                                                <img src="/popup-icons/calendar.png" alt="calendar">
+                                                <label for="first-item">
+                                                    <img src="/popup-icons/calendar.png" alt="calendar">
+                                                </label>
                                             </div>
-                                            <div class="item__descr">Calendar</div>
-                                        </label>
+                                            <div class="item__descr">
+                                                <label for="first-item">
+                                                    <span>Calendar</span>
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="popup-container__item item">
                                         <input class="for-focus-popup" type="checkbox" name="sub-buttons" id="second-item">
-                                        <label for="second-item">
+                                        <div class="item__container">
                                             <div class="item__img">
-                                                <img src="/popup-icons/mail.png" alt="mail">
+                                                <label for="second-item">
+                                                    <img src="/popup-icons/mail.png" alt="mail">
+                                                </label>
                                             </div>
-                                            <div class="item__descr">Mail</div>
-                                        </label>
+                                            <div class="item__descr">
+                                                <label for="second-item">
+                                                    <span>Mail</span>
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="popup-container__item item">
                                         <input class="for-focus-popup" type="checkbox" name="sub-buttons" id="third-item">
-                                        <label for="third-item">
+                                        <div class="item__container">
                                             <div class="item__img">
-                                                <img src="/popup-icons/news.png" alt="news">
+                                                <label for="third-item">
+                                                    <img src="/popup-icons/news.png" alt="news">
+                                                </label>
                                             </div>
-                                            <div class="item__descr">News</div>
-                                        </label>
+                                            <div class="item__descr">
+                                                <label for="third-item">
+                                                    <span>News</span>
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="popup-container__group">
                                     <div class="popup-container__item item">
                                         <input class="for-focus-popup" type="checkbox" name="sub-buttons" id="fourth-item">
-                                        <label for="fourth-item">
+                                        <div class="item__container">
                                             <div class="item__img">
-                                                <img src="/popup-icons/maps.png" alt="maps">
+                                                <label for="fourth-item">
+                                                    <img src="/popup-icons/maps.png" alt="news">
+                                                </label>
                                             </div>
-                                            <div class="item__descr">Map</div>
-                                        </label>
+                                            <div class="item__descr">
+                                                <label for="fourth-item">
+                                                    <span>Maps</span>
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="popup-container__item item">
                                         <input class="for-focus-popup" type="checkbox" name="sub-buttons" id="fiveth-item">
-                                        <label for="fiveth-item">
+                                        <div class="item__container">
                                             <div class="item__img">
-                                                <img src="/popup-icons/files.png" alt="files">
+                                                <label for="fiveth-item">
+                                                    <img src="/popup-icons/files.png" alt="news">
+                                                </label>
                                             </div>
-                                            <div class="item__descr">Files</div>
-                                        </label>
+                                            <div class="item__descr">
+                                                <label for="fiveth-item">
+                                                    <span>Files</span>
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="popup-container__item item">
                                         <input class="for-focus-popup" type="checkbox" name="sub-buttons" id="sixth-item">
-                                        <label for="sixth-item">
+                                        <div class="item__container">
                                             <div class="item__img">
-                                                <img src="/popup-icons/contacts.png" alt="contacts">
+                                                <label for="sixth-item">
+                                                    <img src="/popup-icons/contacts.png" alt="news">
+                                                </label>
                                             </div>
-                                            <div class="item__descr">Contacts</div>
-                                        </label>
+                                            <div class="item__descr">
+                                                <label for="sixth-item">
+                                                    <span>Contacts</span>
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="popup-container__group">
                                     <div class="popup-container__item item">
                                         <input class="for-focus-popup" type="checkbox" name="sub-buttons" id="seventh-item">
-                                        <label for="seventh-item">
+                                        <div class="item__container">
                                             <div class="item__img">
-                                                <img src="/popup-icons/tanslation.png" alt="tanslation">
+                                                <label for="seventh-item">
+                                                    <img src="/popup-icons/tanslation.png" alt="news">
+                                                </label>
                                             </div>
-                                            <div class="item__descr">Translate</div>
-                                        </label>
+                                            <div class="item__descr">
+                                                <label for="seventh-item">
+                                                    <span>Translate</span>
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="popup-container__item item">
                                         <input class="for-focus-popup" type="checkbox" name="sub-buttons" id="eighth-item">
-                                        <label for="eighth-item">
+                                        <div class="item__container">
                                             <div class="item__img">
-                                                <img src="/popup-icons/videos.png" alt="videos">
+                                                <label for="eighth-item">
+                                                    <img src="/popup-icons/videos.png" alt="news">
+                                                </label>
                                             </div>
-                                            <div class="item__descr">Videos</div>
-                                        </label>
+                                            <div class="item__descr">
+                                                <label for="eighth-item">
+                                                    <span>Videos</span>
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="popup-container__item item">
                                         <input class="for-focus-popup" type="checkbox" name="sub-buttons" id="nineth-item">
-                                        <label for="nineth-item">
+                                        <div class="item__container">
                                             <div class="item__img">
-                                                <img src="/popup-icons/search.png" alt="search">
+                                                <label for="nineth-item">
+                                                    <img src="/popup-icons/search.png" alt="news">
+                                                </label>
                                             </div>
-                                            <div class="item__descr">Search</div>
-                                        </label>
+                                            <div class="item__descr">
+                                                <label for="nineth-item">
+                                                    <span>Search</span>
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="popup-container__group">
                                     <div class="popup-container__item item">
                                         <input class="for-focus-popup" type="checkbox" name="sub-buttons" id="tenth-item">
-                                        <label for="tenth-item">
+                                        <div class="item__container">
                                             <div class="item__img">
-                                                <img src="/popup-icons/photos.png" alt="photos">
+                                                <label for="tenth-item">
+                                                    <img src="/popup-icons/photos.png" alt="news">
+                                                </label>
                                             </div>
-                                            <div class="item__descr">Photo</div>
-                                        </label>
+                                            <div class="item__descr">
+                                                <label for="tenth-item">
+                                                    <span>Photo</span>
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="popup-container__item item">
                                         <input class="for-focus-popup" type="checkbox" name="sub-buttons" id="eleventh-item">
-                                        <label for="eleventh-item">
+                                        <div class="item__container">
                                             <div class="item__img">
-                                                <img src="/popup-icons/apps.png" alt="apps">
+                                                <label for="eleventh-item">
+                                                    <img src="/popup-icons/apps.png" alt="news">
+                                                </label>
                                             </div>
-                                            <div class="item__descr">Apps</div>
-                                        </label>
+                                            <div class="item__descr">
+                                                <label for="eleventh-item">
+                                                    <span>Apps</span>
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="popup-container__item item">
                                         <input class="for-focus-popup" type="checkbox" name="sub-buttons" id="twelveth-item">
-                                        <label for="twelveth-item">
+                                        <div class="item__container">
                                             <div class="item__img">
-                                                <img src="/popup-icons/documents.png" alt="documents">
+                                                <label for="twelveth-item">
+                                                    <img src="/popup-icons/documents.png" alt="news">
+                                                </label>
                                             </div>
-                                            <div class="item__descr">Documents</div>
-                                        </label>
+                                            <div class="item__descr">
+                                                <label for="twelveth-item">
+                                                    <span>Documents</span>
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Here -->
                             <div class="popup-menu__more-button more-button">
                                 <input type="checkbox" name="more-button" id="more-button">
-                                <label for="more-button">
-                                    <div class="more-button__button">More</div>
-                                </label>
+                                <div class="more-button__button">
+                                    <label for="more-button">
+                                        <span>More</span>
+                                    </label>
+                                </div>
                                 <div class="line"></div>
                                 <div class="more-button__popup-sub popup-sub">
                                     <div class="popup-container__group">
                                         <div class="popup-container__item item">
                                             <input class="for-focus-popup" type="checkbox" name="sub-buttons" id="thirteenth-item">
-                                            <label for="thirteenth-item">
+                                            
+                                            <div class="item__container">
                                                 <div class="item__img">
-                                                    <img src="/popup-icons/chat.png" alt="chat">
+                                                    <label for="thirteenth-item">
+                                                        <img src="/popup-icons/chat.png" alt="news">
+                                                    </label>
                                                 </div>
-                                                <div class="item__descr">Chat</div>
-                                            </label>
+                                                <div class="item__descr">
+                                                    <label for="thirteenth-item">
+                                                        <span>Chat</span>
+                                                    </label>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="popup-container__item item">
                                             <input class="for-focus-popup" type="checkbox" name="sub-buttons" id="fourteenth-item">
-                                            <label for="fourteenth-item">
+                                            
+                                            <div class="item__container">
                                                 <div class="item__img">
-                                                    <img src="/popup-icons/classroom.png" alt="classroom">
+                                                    <label for="fourteenth-item">
+                                                        <img src="/popup-icons/classroom.png" alt="news">
+                                                    </label>
                                                 </div>
-                                                <div class="item__descr">Classroom</div>
-                                            </label>
+                                                <div class="item__descr">
+                                                    <label for="fourteenth-item">
+                                                        <span>Classroom</span>
+                                                    </label>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="popup-container__item item">
                                             <input class="for-focus-popup" type="checkbox" name="sub-buttons" id="fiveteenth-item">
-                                            <label for="fiveteenth-item">
+                                            
+                                            <div class="item__container">
                                                 <div class="item__img">
-                                                    <img src="/popup-icons/collection.png" alt="collection">
+                                                    <label for="fiveteenth-item">
+                                                        <img src="/popup-icons/collection.png" alt="news">
+                                                    </label>
                                                 </div>
-                                                <div class="item__descr">Colkection</div>
-                                            </label>
+                                                <div class="item__descr">
+                                                    <label for="fiveteenth-item">
+                                                        <span>Collection</span>
+                                                    </label>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="popup-container__group">
                                         <div class="popup-container__item item">
                                             <input class="for-focus-popup" type="checkbox" name="sub-buttons" id="sixteenth-item">
-                                            <label for="sixteenth-item">
+                                            
+                                            <div class="item__container">
                                                 <div class="item__img">
-                                                    <img src="/popup-icons/mars.png" alt="mars">
+                                                    <label for="sixteenth-item">
+                                                        <img src="/popup-icons/mars.png" alt="news">
+                                                    </label>
                                                 </div>
-                                                <div class="item__descr">Mars</div>
-                                            </label>
+                                                <div class="item__descr">
+                                                    <label for="sixteenth-item">
+                                                        <span>Mars</span>
+                                                    </label>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="popup-container__item item">
                                             <input class="for-focus-popup" type="checkbox" name="sub-buttons" id="seventeenth-item">
-                                            <label for="seventeenth-item">
+                                            
+                                            <div class="item__container">
                                                 <div class="item__img">
-                                                    <img src="/popup-icons/blogs.png" alt="blogs">
+                                                    <label for="seventeenth-item">
+                                                        <img src="/popup-icons/blogs.png" alt="news">
+                                                    </label>
                                                 </div>
-                                                <div class="item__descr">Blogs</div>
-                                            </label>
+                                                <div class="item__descr">
+                                                    <label for="seventeenth-item">
+                                                        <span>Blogs</span>
+                                                    </label>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="popup-container__item item">
                                             <input class="for-focus-popup" type="checkbox" name="sub-buttons" id="eigthteenth-item">
-                                            <label for="eigthteenth-item">
+                                            
+                                            <div class="item__container">
                                                 <div class="item__img">
-                                                    <img src="/popup-icons/promo.png" alt="promo">
+                                                    <label for="eigthteenth-item">
+                                                        <img src="/popup-icons/promo.png" alt="news">
+                                                    </label>
                                                 </div>
-                                                <div class="item__descr">Promos</div>
-                                            </label>
+                                                <div class="item__descr">
+                                                    <label for="eigthteenth-item">
+                                                        <span>Promos</span>
+                                                    </label>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -229,7 +346,7 @@
                     </li>
                     <li>
                         <input type="checkbox" name="main-buttons" id="notifications" class="for-focus">
-                        <div class="buttons__notifications">
+                        <div class="buttons__notifications buttons_focus">
                             <label for="notifications">
                                 <span>
                                     <img src="/popup-icons/bell.png" alt="notifications">
@@ -239,7 +356,7 @@
                     </li>
                     <li>
                         <input type="checkbox" name="main-buttons" id="profile" class="for-focus">
-                        <div class="buttons__profile-photo">
+                        <div class="buttons__profile-photo buttons_focus">
                             <label for="profile">
                                 <span>
                                     <img src="/popup-icons/profile-photo.jpeg" alt="profile">
