@@ -123,15 +123,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 25px;
 }
 
-label div {
-  padding: 5px;
+.buttons_focus {
+  padding: 5px 10px;
 }
 
-.for-focus:focus ~ .buttons_focus {
-  box-shadow: 0 0 0 2px rgb(117, 166, 183);
-}
-
-.for-focus-popup:focus ~ .item__container {
+.for-focus:focus ~ .buttons_focus, .for-focus-popup:focus ~ .item__container {
   box-shadow: 0 0 0 2px rgb(117, 166, 183);
 }
 
@@ -177,18 +173,18 @@ label div {
   background: white;
 }
 
-.line {
-  width: 100%;
-  height: 1px;
-  background: lightgray;
-  display: none;
-}
-
 #more-button:checked ~ .line {
   display: block;
 }
 
 #more-button:checked ~ .more-button__button {
+  display: none;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: lightgray;
   display: none;
 }
 
@@ -226,7 +222,7 @@ label div {
   box-shadow: 0 0 0 1px lightgray;
 }
 
-li input {
+.for-focus, .for-focus-popup {
   opacity: 0;
   position: absolute;
 }
